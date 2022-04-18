@@ -39,7 +39,11 @@ div1.message {
     font-size: 3vh;    /*视窗高度的百分比*/
     font-size: 3vw;    /*视窗宽度的百分比*/
     font-size: 3vmin;  /*当前vw和v中较小的一个值*/
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="begin" color="gray"></tw-tag><tw-passagedata pid="1" name="start" tags="begin" position="298,175" size="100,100">
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio= document.createElement('audio');
+audio.src=
+			'https://akirayang0521.github.io/Akira-twine/image/Worezh - Edge of the sky.mp3';
+audio.loop = true;
+audio.play();</script><tw-tag name="begin" color="gray"></tw-tag><tw-passagedata pid="1" name="start" tags="begin" position="298,175" size="100,100">
 
 &lt;div class=&quot;message&quot;&gt;//It is your birthday.
 
@@ -91,11 +95,10 @@ to block the incision and (text-colour:orange)[prevent the overflow of sap in th
 Click to [[immerse-&gt;...]].
 //&lt;/div1&gt;
 (set: $immerse to true)
-(set: $flowering_period to it + 1)</tw-passagedata><tw-passagedata pid="5" name="first aid" tags="begin1" position="1283,351" size="100,100">&lt;div1 class=&quot;message&quot;&gt;//If your daisies begins to droop early,
-cut their stem short and place them a container filled with cold water.
+(set: $flowering_period to it + 1)</tw-passagedata><tw-passagedata pid="5" name="first aid" tags="begin1" position="1283,351" size="100,100">&lt;div1 class=&quot;message&quot;&gt;//If your daisies begin to droop early,
+cut their stem short and place them in a container filled with cold water.
 
-Only make the flower head expose on the water.
-
+Only make the flower head exposed to the water.
 After one to two hours, the flower stem will &quot;wake up&quot;.
 
 Click to [[take first-aid measures-&gt;...]].
@@ -118,7 +121,7 @@ These acids are antioxidants that can inhibit the rapid decay of flowers.
 
 They have antibacterial properties as well as (text-colour:orange)[salt].
 
-&#39;&#39;Note:&#39;&#39; Must be prepared into a solution before use. It is not allowed to add solute directly into water without dissolution. When using salt, pay attention not to have too high concentration.
+&#39;&#39;Note:&#39;&#39; Must be prepared into a solution before use. It is not allowed to add solute directly into the water without dissolution. When using salt, pay attention not to have too high concentration.
 
 
 &lt;img src=&quot;https://akirayang0521.github.io/Akira-twine/image/salt2.gif&quot; style=&quot;width:14%&quot;&gt;
@@ -129,7 +132,7 @@ Click to [[sterilize-&gt;...]].
 (set: $flowering_period to it + 3)</tw-passagedata><tw-passagedata pid="8" name="nutrients" tags="begin1" position="658,351" size="100,100">&lt;div1 class=&quot;message&quot;&gt;//After the flowers are cut from the mother body, 
 they lose their nutritional source.
 
-It is recommended to add (text-colour:orange)[sugar, beer, vitamin C and other nutrients] to protect the flowers.
+It is recommended to add (text-colour:orange)[sugar, beer, vitamin C, and other nutrients] to protect the flowers.
 
 
 &lt;img src=&quot;https://akirayang0521.github.io/Akira-twine/image/sugar2.gif&quot; style=&quot;width:14%&quot;&gt;
@@ -139,7 +142,7 @@ Click to [[add nutrients-&gt;...]].
 (set: $nutrients to true)
 (set: $flowering_period to it + 3)</tw-passagedata><tw-passagedata pid="9" name="ventilate" tags="begin1" position="1158,351" size="100,100">&lt;div1 class=&quot;message&quot;&gt;//Don&#39;t forget to (text-colour:orange)[ventilate the flowers]. 
 
-Most of the time, the flowers wither because they do not get enough air flow to keep their stem fresh, 
+Most of the time, the flowers wither because they do not (text-colour:orange)[get enough airflow to keep their stem fresh], 
 resulting in the decay of tissues inside. 
 
 Ventilation can effectively avoid this problem.
@@ -167,7 +170,7 @@ Click to [[ventilate-&gt;...]].
 [[Receive-&gt;receive]] some light
 |==|
 |=
-[[Immerse-&gt;immerse]] the stem into boiling water
+[[Immerse-&gt;immerse]] the stem in boiling water
 |=
 [[Ventilate-&gt;ventilate]] the flower
 |==|
@@ -180,7 +183,7 @@ Click to [[ventilate-&gt;...]].
 (if:$remove is true)[You have removed the flower leaves.]
 (if:$cut is true)[You have cut the flower stem.]
 (if:$burn is true)[You have burned the flower stem.]
-(if:$immerse is true)[You have immersed the stem into boiling water.]
+(if:$immerse is true)[You have immersed the stem in boiling water.]
 (if:$nutrients is true)[You have added nutrients to the water.]
 (if:$sterilize is true)[You have sterilized the water.]
 (if:$change is true)[You have changed the water/solutions.]
@@ -230,13 +233,13 @@ Click to [[receive-&gt;...]] some light.
 
 &lt;div class=&quot;message&quot;&gt;//Gerbera daisies can have specific meanings based on their color:
 
-(text-colour:yellow)[Yellow] gerberas are a symbol of friendship, trust, and compassion
-&#39;&#39;White&#39;&#39; gerberas symbolize purity and innocence
-(text-colour:orange)[Orange] gerberas signify warmth, joy, and happiness
-(text-colour:red)[Red] gerberas represent romantic love and passion
-(text-colour:magenta)[Pink] gerberas symbolize admiration, sympathy, and grace
-(text-colour:purple)[Purple] gerberas represent grace, charm, and fascination
-(text-colour:grey)[Mixed-color] gerberas represent a strong bond and cheerfulness
+(text-colour:yellow)[Yellow] gerberas are a symbol of (text-colour:yellow)[friendship, trust, and compassion]
+&#39;&#39;White&#39;&#39; gerberas symbolize &#39;&#39;purity and innocence&#39;&#39;
+(text-colour:orange)[Orange] gerberas signify (text-colour:orange)[warmth, joy, and happiness]
+(text-colour:red)[Red] gerberas represent (text-colour:red)[romantic love and passion]
+(text-colour:magenta)[Pink] gerberas symbolize (text-colour:magenta)[admiration, sympathy, and grace]
+(text-colour:purple)[Purple] gerberas represent (text-colour:purple)[grace, charm, and fascination]
+(text-colour:grey)[Mixed-color] gerberas represent (text-colour:grey)[a strong bond and cheerfulness]
 
 
 Reference:
